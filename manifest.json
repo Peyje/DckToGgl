@@ -15,7 +15,7 @@
   ],
 
   "browser_action": {
-    "default_icon": "icons/switch.png",
+    "default_icon": "icons/switch_false.png",
     "default_title": "Switch!"
   },
 
