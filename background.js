@@ -1,7 +1,6 @@
-var google_url;
 var currentTab;
 var currentURL;
-var isDCK;
+var isDCK; // is the current page a duckduckgo.com page?
 
 // switch to the google url
 function switchURL() {
@@ -15,9 +14,10 @@ function switchURL() {
  			}
 		}
 		
-		google_url = "https://google.com/search?" + searchTerm;
+		var google_url = "https://google.com/search?" + searchTerm;
 		browser.tabs.update({url: google_url});
-		// console.log(dck_url);
+	} else {
+		console.log('Error: Not a duckduckgo.com site');
 	}
 }
 
@@ -25,19 +25,14 @@ function switchURL() {
 browser.browserAction.onClicked.addListener(switchURL);
 
 
-
-
-
 // check if switching is possible
 function updateDCK() {
 	var pattern = /^(http|https):\/\/duckduckgo\.com\/[^\s]*(\?|\&)q=.{1,}$/;
 	isDCK = pattern.test(currentURL);
-	// console.log(isDCK);
 }
 
 // update the icon to show weather switching is possible
 function updateIcon() {
-
 	var iconPath;
 	if (isDCK) {
 		iconPath = "icons/switch_true.png";
@@ -55,7 +50,6 @@ function updateActiveTab(tabs) {
     	if (tabs[0]) {
     		currentTab = tabs[0];
       		currentURL = tabs[0].url;
-      		// console.log(currentURL);
       		updateDCK();
       		updateIcon();	
 		}
@@ -64,8 +58,6 @@ function updateActiveTab(tabs) {
   	var gettingActiveTab = browser.tabs.query({active: true, currentWindow: true});
 	gettingActiveTab.then(updateTab);
 }
-
-
 
 
 // listen to tab URL changes
