@@ -1,6 +1,7 @@
 # DckToGgl
 
 Firefox Addon to change a duckduckgo.com search to a google.com search with the press of one button.
+*Alternatively use the shortcut CTRL+SHIFT+S to switch whenever possible.*
 
 
 
