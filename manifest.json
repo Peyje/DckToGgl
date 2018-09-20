@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "DckToGgl",
+  "version": "1.0",
+
+  "description": "Switches from a DuckDuckGo URL to a Google URL",
+
+  "icons": {
+    "48": "icons/dcktoggl.png"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/switch.png",
+    "default_title": "Switch!"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+}
+
+}
