@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "DckToGgl",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Switches from a duckduckgo.com search to a google.com search with the press of one button",
 
