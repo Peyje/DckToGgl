@@ -27,7 +27,8 @@
   "commands": {
     "switchWithKeypress": {
       "suggested_key": {
-        "default": "Ctrl+Shift+S"
+        "default": "Ctrl+Shift+G",
+        "mac": "MacCtrl+Shift+G"
       },
       "description": "Does the same as pressing the button"
     }
