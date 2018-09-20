@@ -4,10 +4,11 @@
   "name": "DckToGgl",
   "version": "1.0",
 
-  "description": "Switches from a DuckDuckGo URL to a Google URL",
+  "description": "Switches from a duckduckgo.com search to a google.com search with the press of one button",
 
   "icons": {
-    "48": "icons/dcktoggl.png"
+    "48": "icons/dcktoggl.svg",
+    "96": "icons/dcktoggl.svg"
   },
 
   "permissions": [
@@ -16,7 +17,7 @@
 
   "browser_action": {
     "default_icon": "icons/switch_false.png",
-    "default_title": "Switch!"
+    "default_title": "Switch to Google"
   },
 
   "background": {

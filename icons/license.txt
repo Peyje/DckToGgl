@@ -1,0 +1,1 @@
+These icons are taken from the Google Material Design iconset, and are used under the terms of the Apache License 2.0, found here: https://www.apache.org/licenses/LICENSE-2.0.html

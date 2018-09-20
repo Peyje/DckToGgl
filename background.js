@@ -33,14 +33,16 @@ function updateDCK() {
 
 // update the icon to show weather switching is possible
 function updateIcon() {
-	var iconPath;
-	if (isDCK) {
-		iconPath = "icons/switch_true.png";
-	} else {
-		iconPath = "icons/switch_false.png";
-	}
-
-	browser.browserAction.setIcon({path: iconPath, tabId: currentTab.id});
+	browser.browserAction.setIcon({
+    path: isDCK ? {
+      48: "icons/switch_true.svg",
+      92: "icons/switch_true.svg"
+    } : {
+      48: "icons/switch_false.svg",
+      92: "icons/switch_false.svg"
+    },
+    tabId: currentTab.id
+});
 }
 
 // update everything for the current tab
