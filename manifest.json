@@ -22,6 +22,15 @@
 
   "background": {
    "scripts": ["background.js"]
+  },
+
+  "commands": {
+    "switchWithKeypress": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Does the same as pressing the button"
+    }
   }
 
 }

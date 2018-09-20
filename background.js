@@ -24,6 +24,13 @@ function switchURL() {
 // call switchURL when button is pressed
 browser.browserAction.onClicked.addListener(switchURL);
 
+// call switchURL when key command is used
+browser.commands.onCommand.addListener(function(command) {
+  if (command == "switchWithKeypress") {
+    switchURL();
+  }
+});
+
 
 // check if switching is possible
 function updateDCK() {
