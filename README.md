@@ -2,7 +2,7 @@
 
 Firefox Addon to change a duckduckgo.com search to a google.com search with the press of one button.
 
-*Alternatively use the shortcut CTRL+SHIFT+S to switch whenever possible.*
+*Alternatively use the shortcut CTRL+SHIFT+G to switch whenever possible.*
 
 ## Installation
 Simply add it from the Firefox Add-ons [website](https://addons.mozilla.org/de/firefox/addon/dcktoggl/).
