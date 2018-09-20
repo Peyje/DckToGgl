@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "DckToGgl",
-  "version": "1.1",
+  "version": "1.2",
 
   "description": "Switches from a duckduckgo.com search to a google.com search with the press of one button",
 
@@ -27,8 +27,7 @@
   "commands": {
     "switchWithKeypress": {
       "suggested_key": {
-        "default": "Ctrl+Shift+G",
-        "mac": "MacCtrl+Shift+G"
+        "default": "Alt+Shift+G"
       },
       "description": "Does the same as pressing the button"
     }
